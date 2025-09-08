@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+}
+
+
+.sidebar {
+  background: #182f35;
+  color: #cfe7e5;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 80px;
+}
+
+
+.logo img {
+  width: 90px;
+
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+li a {
+  text-decoration: none;
+
+}
+
+li a span {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  color: #6d8386;
+}
+
+.sidebar nav a.active {
+  color: #00c99f;
+}
+
+
+.call {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.call-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00c99f;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+/* Content */
+.content {
+  margin-left: 250px;
+
+  flex: 1;
+  background-color: #11282d;
+}
+
+.hero {
+  display: flex;
+
+
+
+}
+
+.hero-text {
+  max-width: 534px;
+  padding-left: 78px;
+  padding-top: 120px;
+}
+
+.hero-text .badge {
+  display: inline-block;
+  background: #182f35;
+  color: #00c99f;
+  padding: 8px 19px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.hero-text h1 {
+  z-index: 18;
+  font-family: "Space Grotesk";
+  visibility: visible;
+  text-align: left;
+  line-height: 66px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 62px;
+
+  color: #fff;
+
+  width: 534px;
+
+}
+
+.hero-text h1 span {
+  z-index: 18;
+  font-family: "Space Grotesk";
+  visibility: visible;
+  text-align: left;
+  line-height: 66px;
+  letter-spacing: 0px;
+  font-weight: 500;
+  font-size: 62px;
+
+  color: rgb(122, 231, 199);
+
+  width: 534px;
+
+}
+
+
+
+.hero-text p {
+  z-index: 17;
+  visibility: visible;
+  text-align: left;
+  line-height: 25px;
+
+  font-weight: 500;
+  font-size: 18px;
+
+  color: rgb(255, 255, 255);
+
+  width: 534px;
+
+}
+
+.hero-text .cta {
+
+  background-color: rgb(122, 231, 199);
+  font-family: "Space Grotesk";
+  visibility: visible;
+  text-align: left;
+  line-height: 28px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  border-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  margin: 0px;
+  border-radius: 70px;
+  padding: 9px 27px;
+  color: rgb(38, 40, 40);
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.awards {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  color: #93b4b1;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.men-image {
+  position: absolute;
+  top: -76px;
+}
+
+.circle {
+  margin-top: 120px;
+  animation: rotateCircle 65s linear infinite;
+  width: 546px;
+
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero-img img {
+  width: 524px;
+  margin-right: 47px;
+  z-index: 10;
+}
