@@ -431,8 +431,7 @@ li a span {
 /* service */
 .info-section {
   background: #11282d;
-  color: #fff;
-  font-family: Arial, sans-serif;
+
   padding: 50px 0;
 }
 
@@ -440,13 +439,15 @@ li a span {
 .info-section .hero {
 
   background-image: url("https://be.beantownthemes.net/html/content/coaching3/images/coaching3-section-bg2.webp");
-  height: 600px;
+  height: 732px;
 }
 
-.info-section .text h1 {
-  font-size: 40px;
-  color: #50e3c2;
-  line-height: 1.3;
+.info-section .text h2 {
+  font-size: 55px;
+  color: #7AE7C7;
+  font-weight: 500;
+  letter-spacing: 0px;
+  padding: 0px 68px;
 }
 
 
@@ -457,6 +458,7 @@ li a span {
   justify-content: space-around;
   text-align: center;
   padding: 40px 60px;
+  margin-top: -216px;
 }
 
 .info-section .stat h2 {
@@ -479,6 +481,12 @@ li a span {
   border-radius: 12px;
   padding: 40px;
   column-gap: 130px;
+  margin-top: 65px;
+}
+
+
+.exp-right {
+  width: 400px;
 }
 
 .info-section .exp-left img {
@@ -490,13 +498,16 @@ li a span {
 }
 
 .info-section .exp-right h2 {
-  font-size: 32px;
-  color: #0b1c1f;
+  font-size: 55px;
+  color: #07242C;
+  font-weight: 500;
+
 }
 
 .info-section .exp-right p {
-  color: #0b1c1f;
-  margin: 15px 0;
+  color: #07242C;
+
+  font-size: 20px;
 }
 
 
@@ -513,9 +524,13 @@ li a span {
   display: flex;
   justify-content: space-between;
   background: #11282c;
-  border-radius: 12px;
+
   margin: 60px;
-  padding: 40px;
+  padding: 70px;
+  border-style: solid;
+  border-color: #265E6D;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 12px 12px 12px 12px;
 }
 
 .info-section .skills-left {
@@ -559,4 +574,71 @@ li a span {
   text-align: right;
   font-size: 14px;
   color: #aaa;
+}
+
+/* guide */
+
+.popular-guides {
+  margin: 0;
+  padding: 50px 60px;
+  background: #11282d;
+
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.popular-guides h2 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #62f0c8;
+  margin: 0 0 40px 0;
+  letter-spacing: 1px;
+}
+
+.guides-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.guide-card {
+  position: relative;
+
+  border-radius: 14px;
+  overflow: hidden;
+  width: 218px;
+  height: 805px;
+}
+
+
+
+
+.guide-card img {
+  width: 100%;
+  height: 805px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+}
+
+.guide-content {
+  position: absolute;
+  bottom: 26px;
+  left: 22px;
+  right: 22px;
+  text-align: left;
+}
+
+.guide-content h3 {
+  font-size: 22px;
+  line-height: 1.05;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.guide-content p {
+  font-size: 13px;
+  margin: 0 0 18px 0;
+  opacity: 0.9;
+  letter-spacing: 0.6px;
 }
