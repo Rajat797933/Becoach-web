@@ -15,6 +15,7 @@ body {
   top: 0;
   bottom: 0;
   z-index: 1;
+
 }
 
 .logo {
@@ -1425,5 +1426,321 @@ h2 {
   }
 }
 
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  color: #00c99f;
+  padding: 15px;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1100;
+}
+
+.menu-toggle {
+  display: none;
+  position: sticky;
+  font-size: 26px;
+  cursor: pointer;
+}
 
 /* responsive */
+
+/* Tablet (820px – 1200px) */
+@media (max-width: 1200px) and (min-width: 820px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 1000;
+    max-width: 1200px;
+
+    width: 100%;
+  }
+
+  .sidebar-nav.active {
+    display: flex;
+  }
+
+  .sidebar-nav a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .sidebar nav,
+  .sidebar .meta {
+    display: none;
+
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .call {
+    margin: 0;
+  }
+
+  .call-btn {
+    margin: 0;
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-left: none
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .hero-text {
+    padding: 0;
+    max-width: 50%;
+  }
+
+  .hero-text h1 {
+    font-size: 44px;
+    line-height: 52px;
+    width: auto;
+  }
+
+  .hero-text h1 span {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    line-height: 24px;
+    width: auto;
+    margin-top: 15px;
+  }
+
+  .hero-cta {
+    margin-top: 25px;
+  }
+
+  .awards {
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    text-align: right;
+    max-width: 50%;
+    position: relative;
+  }
+
+  .hero-img img {
+    width: 340px;
+  }
+
+  .circle {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .ball-top img,
+  .ball-bottom img {
+    display: none;
+  }
+
+  .demo-btn {
+    display: none;
+  }
+
+  .image-section {
+    display: none;
+  }
+}
+
+
+/*  Mobile (420px – 819px) */
+@media (max-width: 819px) and (min-width: 420px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    max-width: 1200px;
+
+    width: 100%;
+  }
+
+  .sidebar-nav.active {
+    display: flex;
+  }
+
+  .sidebar nav,
+  .sidebar .meta {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .call-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px 0;
+    padding: 0 20px;
+    margin-left: none;
+  }
+
+  .mark {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .hero-text h1 span {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+    width: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .awards {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .hero-img {
+    margin-top: 25px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-img img {
+    width: 240px;
+  }
+
+  .circle {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .men-image {
+    position: relative;
+    top: 0;
+    margin-top: 10px;
+  }
+
+  .demo-btn {
+    display: none;
+  }
+
+  .ball-top img,
+  .ball-bottom img {
+    display: none;
+  }
+
+  .image-section {
+    display: none;
+  }
+}
